@@ -1,0 +1,7 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/GhostWin10Repair/.vs/GhostWin10Repair/v16
+/GhostWin10Repair/obj/Debug
+/GhostWin10Repair/bin/Debug
