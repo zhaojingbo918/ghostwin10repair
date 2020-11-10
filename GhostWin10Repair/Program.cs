@@ -17,18 +17,17 @@ namespace GhostWin10Repair
             var target = @"C:\Windows";
 
             RepairFolder(source, target);
-
-         
         }
 
 
 
         static void RepairFolder(string sourceFolder, string targetFolder)
         {
-            targetFolder = targetFolder.Replace(@"C:\", @"D:\test1110\");
+            //targetFolder = targetFolder.Replace(@"C:\", @"D:\test1110\");
             List<CcpFileInfo> sourceFiles = FolderCompareHelper.GetFilesFromFolder(sourceFolder);
 
-            //1,复制文件
+            int count = 0;
+
             for (int i = 0; i < sourceFiles.Count; i++)
             {
                 var file = sourceFiles[i];
@@ -38,9 +37,20 @@ namespace GhostWin10Repair
                 {
                     CreateDir(targetFilepath);
                     File.Copy(file.FullName, targetFilepath, true);
+                    Console.WriteLine($"{++count}  修复{targetFilepath}");
                 }
             }
 
+            if (count == 0)
+            {
+                Console.WriteLine("无需修复");
+            }
+            else
+            {
+                Console.WriteLine("修复完成");
+            }
+
+            Console.ReadKey();
         }
 
         /// <summary>
