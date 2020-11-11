@@ -1,1 +1,1 @@
-# ghostwin10repair
+修复ghostwin10系统确实文件导致wpf程序无法运行的bug
