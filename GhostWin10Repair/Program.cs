@@ -24,7 +24,7 @@ namespace GhostWin10Repair
         static void RepairFolder(string sourceFolder, string targetFolder)
         {
             //targetFolder = targetFolder.Replace(@"C:\", @"D:\test1110\");
-            List<CcpFileInfo> sourceFiles = FolderCompareHelper.GetFilesFromFolder(sourceFolder);
+            List<CustomFileInfo> sourceFiles = FolderCompareHelper.GetFilesFromFolder(sourceFolder);
 
             int count = 0;
 

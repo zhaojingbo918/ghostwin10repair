@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CcpFileInfo.cs" />
+    <Compile Include="CustomFileInfo.cs" />
     <Compile Include="FolderCompareHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

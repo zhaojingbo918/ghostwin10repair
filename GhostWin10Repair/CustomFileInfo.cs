@@ -2,9 +2,8 @@
 
 namespace GhostWin10Repair
 {
-    public class CcpFileInfo
-    {
-        private string m_FullName;
+    public class CustomFileInfo
+    { 
 
         public string FullName { get; set; }
 
